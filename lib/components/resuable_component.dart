@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget customTextField({
+  TextInputType? type,
   bool obscureText = false,
   IconButton? iconButton,
   String? labelText ,
@@ -13,7 +14,7 @@ Widget customTextField({
   obscureText: obscureText ,
   validator: validator,
   controller: controller,
-  keyboardType: TextInputType.emailAddress,
+  keyboardType: type,
   decoration: InputDecoration(
     prefixIcon: Icon(icon , color: Colors.black,),
     labelText: labelText,

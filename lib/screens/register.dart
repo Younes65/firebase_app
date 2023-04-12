@@ -94,6 +94,7 @@ class _RegisterState extends State<Register> {
                       ),
 
                       customTextField(
+                        type: TextInputType.phone,
                           validator: (value){
                             if (value!.isEmpty) {
                               return 'Required';
@@ -106,6 +107,7 @@ class _RegisterState extends State<Register> {
                         height: 15,
                       ),
                       customTextField(
+                        type: TextInputType.emailAddress,
                         labelText: 'Email Address',
                           validator: (value){
                             if (value!.isEmpty) {
